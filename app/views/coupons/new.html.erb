@@ -1,0 +1,11 @@
+<h3>Coupon Form</h3>
+
+<%= form_with model: @coupon, url: coupons_path do |f| %>
+  <label>Coupon Code:</label><br>
+  <%= f.text_field :coupon_code %><br>
+
+  <label>Store:</label><br>
+  <%= f.text_field :store %><br>
+  
+  <%= f.submit "Submit Coupon"%>
+<% end %>
